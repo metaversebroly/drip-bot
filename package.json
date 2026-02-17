@@ -1,0 +1,20 @@
+{
+  "name": "drip-bot",
+  "version": "1.0.0",
+  "description": "💧 DRIP — Creator Fee Redistribution Bot for pump.fun tokens",
+  "main": "drip-bot.js",
+  "type": "module",
+  "scripts": {
+    "drip": "node drip-bot.js --once",
+    "drip:loop": "node drip-bot.js --loop",
+    "dashboard": "node drip-dashboard.js",
+    "test": "node drip-bot.js"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.0",
+    "@supabase/supabase-js": "^2.95.3",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.0",
+    "node-fetch": "^3.3.0"
+  }
+}
