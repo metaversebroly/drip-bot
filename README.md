@@ -1,8 +1,24 @@
-# 💧 DRIP — Creator Fee Redistribution Protocol
+# 💧 $DRIP — Real Rewards for Real Holders
 
-> **What if creator fees came back to YOU?**
+> Pump.fun cashbacks reward traders who spam buy & sell. DRIP rewards holders who believe.
 
-DRIP is an open-source bot that automatically redistributes pump.fun creator fees to token holders based on their **loyalty score**.
+Pump.fun just launched "Cashback Coins" — rewarding the traders who flip the fastest. Bots, snipers, and flippers win. Holders get nothing.
+
+$DRIP flips the script. 100% of creator fees are redistributed to holders based on a loyalty score. The longer you hold, the more you earn. Sell your bag? You're cut off.
+
+Every 30 minutes, SOL drips to diamond hands. No cashback for degens — just pure holder rewards.
+
+---
+
+## Why DRIP > Cashback
+
+| | Pump.fun Cashback | $DRIP |
+|---|---|---|
+| Who gets rewarded? | Traders (buy & sell volume) | Holders (loyalty score) |
+| Bots benefit? | Yes — they spam trades | No — need to hold |
+| Frequency | Claim manually on mobile app | Auto every 30 min |
+| Fair distribution? | Whales dominate | Capped at 2% per wallet |
+| Sell your bag? | Still get cashback | Disqualified |
 
 ---
 
