@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  --neon: #00FF88;
+  --neon-dim: #00cc6a;
+  --dark-900: #0a0a0f;
+  --dark-800: #12121a;
+}
+
+body {
+  @apply bg-dark-900 text-gray-200 font-mono antialiased;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Neon glow on focus */
+.neon-glow {
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+}

@@ -2,4 +2,6 @@
 ".env" 
 "node_modules/" 
 .env 
-node_modules/ 
+node_modules/
+web/.next/
+web/node_modules/ 
