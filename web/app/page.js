@@ -73,7 +73,7 @@ export default function Home() {
                 </tr>
                 <tr className="border-t border-dark-600">
                   <td className="p-4 font-medium">Frequency</td>
-                  <td className="p-4">Claim manually on mobile app</td>
+                  <td className="p-4">Claim manually</td>
                   <td className="p-4 text-neon">Auto every 30 min</td>
                 </tr>
                 <tr className="border-t border-dark-600">
@@ -84,7 +84,7 @@ export default function Home() {
                 <tr className="border-t border-dark-600">
                   <td className="p-4 font-medium">Sell your bag?</td>
                   <td className="p-4">Still get cashback</td>
-                  <td className="p-4 text-neon">Disqualified</td>
+                  <td className="p-4 text-neon">Disqualified if sell &gt; 50%</td>
                 </tr>
               </tbody>
             </table>
