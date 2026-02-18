@@ -5,13 +5,46 @@ const PUMP_URL = process.env.NEXT_PUBLIC_PUMP_FUN_URL || 'https://pump.fun';
 const TOKEN_CA = process.env.NEXT_PUBLIC_TOKEN_MINT || 'YOUR_TOKEN_CA';
 const TOKEN_SUPPLY = process.env.NEXT_PUBLIC_TOKEN_SUPPLY || '1,000,000,000';
 const GITHUB_URL = process.env.NEXT_PUBLIC_GITHUB_URL || 'https://github.com/metaversebroly/drip-bot';
-const X_URL = process.env.NEXT_PUBLIC_X_URL || 'https://x.com';
+const X_URL = process.env.NEXT_PUBLIC_X_URL || 'https://x.com/pepedriponsol';
 
 export default function Home() {
   return (
     <main className="min-h-screen">
+      {/* TOP NAV */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+        <div className="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-4">
+          <a href="#" className="text-neon font-bold text-lg hover:text-neon hover:drop-shadow-[0_0_8px_rgba(0,255,136,0.6)] transition-all">
+            PepeDrip
+          </a>
+          <div className="flex flex-wrap items-center gap-1 sm:gap-2">
+            <a href="#problem" className="px-3 py-2 text-sm text-gray-400 hover:text-neon hover:bg-neon/10 rounded-lg transition-all duration-200 border border-transparent hover:border-neon/30">
+              Problem
+            </a>
+            <a href="#how-it-works" className="px-3 py-2 text-sm text-gray-400 hover:text-neon hover:bg-neon/10 rounded-lg transition-all duration-200 border border-transparent hover:border-neon/30">
+              How it Works
+            </a>
+            <a href="#dashboard" className="px-3 py-2 text-sm text-gray-400 hover:text-neon hover:bg-neon/10 rounded-lg transition-all duration-200 border border-transparent hover:border-neon/30">
+              Dashboard
+            </a>
+            <a href="#tokenomics" className="px-3 py-2 text-sm text-gray-400 hover:text-neon hover:bg-neon/10 rounded-lg transition-all duration-200 border border-transparent hover:border-neon/30">
+              Tokenomics
+            </a>
+            <a href="#roadmap" className="px-3 py-2 text-sm text-gray-400 hover:text-neon hover:bg-neon/10 rounded-lg transition-all duration-200 border border-transparent hover:border-neon/30">
+              Roadmap
+            </a>
+            <span className="w-px h-5 bg-dark-600 mx-1 hidden sm:block" />
+            <a href={X_URL} target="_blank" rel="noopener noreferrer" className="px-3 py-2 text-sm text-gray-400 hover:text-neon hover:bg-neon/10 rounded-lg transition-all duration-200 border border-transparent hover:border-neon/30">
+              X
+            </a>
+            <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="px-3 py-2 text-sm text-gray-400 hover:text-neon hover:bg-neon/10 rounded-lg transition-all duration-200 border border-transparent hover:border-neon/30">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </nav>
+
       {/* HERO */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center px-4 overflow-hidden">
+      <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center px-4 overflow-hidden pt-16">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,255,136,0.08)_0%,transparent_70%)]" />
         <div className="relative z-10 text-center w-full max-w-4xl">
           <Image
@@ -45,7 +78,7 @@ export default function Home() {
       </section>
 
       {/* THE PROBLEM */}
-      <section className="py-20 px-4 bg-dark-800/50">
+      <section id="problem" className="py-20 px-4 bg-dark-800/50 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-4">The Problem</h2>
           <p className="text-gray-400 mb-10 text-lg">
@@ -93,7 +126,7 @@ export default function Home() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="py-20 px-4">
+      <section id="how-it-works" className="py-20 px-4 scroll-mt-20">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-4">How It Works</h2>
           <p className="text-gray-400 mb-12">
@@ -143,7 +176,7 @@ export default function Home() {
       <LiveDashboard />
 
       {/* TOKENOMICS */}
-      <section className="py-20 px-4 bg-dark-800/50">
+      <section id="tokenomics" className="py-20 px-4 bg-dark-800/50 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-4">Tokenomics</h2>
           <div className="bg-dark-800 border border-dark-600 rounded-xl p-8 space-y-4">
@@ -178,7 +211,7 @@ export default function Home() {
       </section>
 
       {/* ROADMAP */}
-      <section className="py-20 px-4">
+      <section id="roadmap" className="py-20 px-4 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-10">Roadmap</h2>
           <div className="space-y-6">
