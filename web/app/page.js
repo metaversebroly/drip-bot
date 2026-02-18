@@ -4,7 +4,7 @@ import LiveDashboard from '@/components/LiveDashboard';
 const PUMP_URL = process.env.NEXT_PUBLIC_PUMP_FUN_URL || 'https://pump.fun';
 const TOKEN_CA = process.env.NEXT_PUBLIC_TOKEN_MINT || 'YOUR_TOKEN_CA';
 const TOKEN_SUPPLY = process.env.NEXT_PUBLIC_TOKEN_SUPPLY || '1,000,000,000';
-const GITHUB_URL = process.env.NEXT_PUBLIC_GITHUB_URL || 'https://github.com';
+const GITHUB_URL = process.env.NEXT_PUBLIC_GITHUB_URL || 'https://github.com/metaversebroly/drip-bot';
 const X_URL = process.env.NEXT_PUBLIC_X_URL || 'https://x.com';
 
 export default function Home() {
