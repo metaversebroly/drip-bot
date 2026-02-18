@@ -11,7 +11,7 @@ DRIP is an open-source bot that automatically redistributes pump.fun creator fee
 ```
 Trading Volume → Creator Fees Generated → DRIP Bot Claims Fees
 → Calculates Holder Scores → Redistributes SOL to Diamond Hands
-→ Repeat Every Hour 💧
+→ Repeat Every 30 Minutes 💧
 ```
 
 ### The DRIP Score Algorithm
@@ -21,26 +21,26 @@ Not all holders are equal. DRIP rewards **loyalty over size**:
 | Factor | How It Works |
 |--------|-------------|
 | 🕐 **Hold Duration** | The longer you hold, the higher your multiplier (0.1x → 2.0x) |
-| 📊 **Hold Amount** | Your % of supply, but **capped at 3%** — whales don't dominate |
+| 📊 **Hold Amount** | Your % of supply, but **capped at 2%** — whales don't dominate |
 | 🛡️ **Loyalty Check** | Sold more than 50% of your bag? **Disqualified** from drip |
 
 #### Duration Multipliers
 
 | Hold Time | Multiplier | Tier |
 |-----------|-----------|------|
-| < 1 hour | 0.1x | 🏃 Sniper |
-| 1-6 hours | 0.5x | 🚶 Tourist |
-| 6-24 hours | 1.0x | 💪 Believer |
-| 24-72 hours | 1.5x | 💎 Diamond |
-| 72+ hours | 2.0x | 👑 OG |
+| < 30 min | 0.1x | 🏃 Sniper |
+| 30 min - 2h | 0.5x | 🚶 Tourist |
+| 2h - 6h | 1.0x | 💪 Believer |
+| 6h - 24h | 1.5x | 💎 Diamond |
+| 24h+ | 2.0x | 👑 OG |
 
 ### Example
 
 Two holders of $DRIP:
-- **Holder A**: Owns 1% of supply, holding for 48 hours → Score: 1.0 × 1.5 = **1.5**
-- **Holder B**: Owns 5% of supply (capped at 3%), holding for 2 hours → Score: 3.0 × 0.5 = **1.5**
+- **Holder A**: Owns 0.5% of supply, holding 24h+ → Score: 0.5 × 2.0 = **1.0** 👑 OG
+- **Holder B**: Owns 2% of supply (capped at 2%), holding 20min → Score: 2.0 × 0.1 = **0.2** 🏃 Sniper
 
-Both get equal drip. The small guy who holds longer gets as much as the whale who just bought.
+The OG with a small bag earns 5x more than the whale who just aped in.
 
 ---
 
@@ -54,7 +54,7 @@ cp .env.example .env
 # Edit .env with your keys
 node drip-bot.js --once    # Single drip cycle
 node drip-bot.js --once --dry-run   # Test without sending SOL
-node drip-bot.js --loop   # Auto-drip every hour
+node drip-bot.js --loop   # Auto-drip every 30 min
 ```
 
 **Premiers tests (APIs + dry-run) :** voir [TESTING.md](./TESTING.md).

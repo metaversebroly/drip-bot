@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💧 DRIP Dashboard</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a0a0f;
+      color: #e0e0e0;
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      padding: 40px;
+    }
+    .container { max-width: 800px; margin: 0 auto; }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header h1 {
+      font-size: 48px;
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+    .header .subtitle {
+      color: #888;
+      font-size: 14px;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .stat-card {
+      background: #12121a;
+      border: 1px solid #1e1e2e;
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+    }
+    .stat-card .value {
+      font-size: 28px;
+      font-weight: bold;
+      color: #00d4ff;
+      margin-bottom: 4px;
+    }
+    .stat-card .label {
+      font-size: 11px;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .drip-table {
+      width: 100%;
+      background: #12121a;
+      border: 1px solid #1e1e2e;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 32px;
+    }
+    .drip-table th {
+      background: #1a1a2e;
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #666;
+    }
+    .drip-table td {
+      padding: 12px 16px;
+      border-top: 1px solid #1e1e2e;
+      font-size: 13px;
+    }
+    .drip-table tr:hover td {
+      background: #1a1a25;
+    }
+    .amount { color: #00ff88; font-weight: bold; }
+    .score { color: #7b2ff7; }
+    .wallet { color: #888; font-family: monospace; }
+    .footer {
+      text-align: center;
+      color: #444;
+      font-size: 12px;
+      margin-top: 40px;
+    }
+    .live-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: #00ff88;
+      border-radius: 50%;
+      margin-right: 6px;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>💧 DRIP</h1>
+      <p class="subtitle">
+        <span class="live-dot"></span>
+        Creator Fee Redistribution Protocol — Live Dashboard
+      </p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="value">0.1000</div>
+        <div class="label">Total SOL Distributed</div>
+      </div>
+      <div class="stat-card">
+        <div class="value">1</div>
+        <div class="label">Drip Cycles</div>
+      </div>
+      <div class="stat-card">
+        <div class="value">5</div>
+        <div class="label">Unique Recipients</div>
+      </div>
+    </div>
+
+    
+    <h3 style="margin-bottom: 12px; color: #888; font-size: 13px;">
+      LATEST DRIP — 2/17/2026, 5:09:18 PM
+    </h3>
+    <table class="drip-table">
+      <thead>
+        <tr>
+          <th>Wallet</th>
+          <th>DRIP Score</th>
+          <th>Amount</th>
+          <th>Hold Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td class="wallet">3xpX...XRHm</td>
+          <td class="score">4.5000</td>
+          <td class="amount">0.019562 SOL</td>
+          <td>N/A</td>
+        </tr>
+        
+        <tr>
+          <td class="wallet">BW6k...5w18</td>
+          <td class="score">3.7941</td>
+          <td class="amount">0.016494 SOL</td>
+          <td>N/A</td>
+        </tr>
+        
+        <tr>
+          <td class="wallet">CPkF...M8hn</td>
+          <td class="score">2.8193</td>
+          <td class="amount">0.012256 SOL</td>
+          <td>N/A</td>
+        </tr>
+        
+        <tr>
+          <td class="wallet">J4CE...ncwF</td>
+          <td class="score">2.3150</td>
+          <td class="amount">0.010064 SOL</td>
+          <td>N/A</td>
+        </tr>
+        
+        <tr>
+          <td class="wallet">JDNu...5Qk4</td>
+          <td class="score">2.2370</td>
+          <td class="amount">0.009725 SOL</td>
+          <td>N/A</td>
+        </tr>
+        
+      </tbody>
+    </table>
+    
+
+    <div class="footer">
+      <p>DRIP Protocol — 100% of creator fees redistributed to holders</p>
+      <p style="margin-top: 4px;">Diamond hands get the drip 💧💎</p>
+    </div>
+  </div>
+</body>
+</html>
